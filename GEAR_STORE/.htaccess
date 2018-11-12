@@ -1,0 +1,48 @@
+#([0-9]+)
+#([a-zA-Z0-9-_]+)
+#ErrorDocument 404 /GEAR_STORE/404.html
+#ErrorDocument 403 /GEAR_STORE/403.html
+
+ReWriteEngine on
+
+RewriteRule ^san-pham=([0-9]+)-([a-zA-Z0-9-_]+)$ chi_tiet_san_pham.php?ma_san_pham=$1
+RewriteRule ^PC-laptop$ pc_laptop.php
+RewriteRule ^PC-laptop=([0-9]+)-([a-zA-Z0-9-_]+)$ pc_laptop.php?ma_loai=$1
+RewriteRule ^linh-kien-PC$ linh_kien_pc.php
+RewriteRule ^linh-kien-PC=([0-9]+)-([a-zA-Z0-9-_]+)$ linh_kien_pc.php?ma_loai=$1
+
+RewriteRule ^man-hinh$ man_hinh.php
+RewriteRule ^man-hinh=([0-9]+)-([a-zA-Z0-9-_]+)$ man_hinh.php?ma_loai=$1
+
+RewriteRule ^ban-phim$ ban_phim.php
+RewriteRule ^ban-phim=([0-9]+)-([a-zA-Z0-9-_]+)$ ban_phim.php?ma_loai=$1
+
+RewriteRule ^chuot$ chuot.php
+RewriteRule ^chuot=([0-9]+)-([a-zA-Z0-9-_]+)$ chuot.php?ma_loai=$1
+
+RewriteRule ^tai-nghe$ tai_nghe.php
+RewriteRule ^tai-nghe=([0-9]+)-([a-zA-Z0-9-_]+)$ tai_nghe.php?ma_loai=$1
+
+RewriteRule ^ghe$ ghe.php
+RewriteRule ^ghe=([0-9]+)-([a-zA-Z0-9-_]+)$ ghe.php?ma_loai=$1
+
+RewriteRule ^phu-kien$ phu_kien.php
+RewriteRule ^phu-kien=([0-9]+)-([a-zA-Z0-9-_]+)$ phu_kien.php?ma_loai=$1
+
+
+
+RewriteRule ^dang_ky$ dang_ky.php
+RewriteRule ^dang_nhap$ dang_nhap.php
+RewriteRule ^tim_kiem$ tim_kiem.php
+RewriteRule ^gio_hang$ gio_hang.php
+RewriteRule ^xac_nhan_thanh_toan$ xac_nhan_thanh_toan.php
+RewriteRule ^gioi_thieu$ gioi_thieu.php
+RewriteRule ^lien_he$ lien_he.php
+
+
+
+
+
+#error
+ErrorDocument 404 /GEAR_STORE/404.php
+ErrorDocument 403 /GEAR_STORE/403.php
